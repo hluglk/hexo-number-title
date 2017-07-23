@@ -1,0 +1,20 @@
+{
+  "name": "hexo-number-title",
+  "version": "1.0.1",
+  "description": "format title in the hexo blog into type of number",
+  "main": "index.js",
+  "scripts": {
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hluglk/hexo-number-title.git"
+  },
+  "keywords": [
+    "hexo-plugins"
+  ],
+  "author": "hluglk",
+  "bugs": {
+    "url": "https://github.com/hluglk/hexo-number-title/issues"
+  }
+}
