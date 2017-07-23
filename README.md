@@ -24,4 +24,4 @@ hexo poi
 若要初始化参考上一条
 
 ### DEMO
-[VCGPGSZO](hluglk.top)
+[VCGPGSZO](http://hluglk.top)
