@@ -15,13 +15,12 @@ number_title:
   enable: true
 ```
 **注意**：
-第一次使用时务必初始化
+第一次请务必初始化
 ```bash
 hexo poi
 ```
-
-执行 `hexo clean` 命令并不会改变 id 值，但若修改了 uuid 则会创建一个新的    
-若要初始化参考上一条
+执行 `hexo clean` 命令并不会重建 id ，若改变了 uuid 则会创建一个新的    
+若要重置全部 id, 请参考前一条
 
 ### DEMO
 [VCGPGSZO](http://hluglk.top)
