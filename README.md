@@ -14,13 +14,15 @@ npm install hexo-number-title --save
 number_title:
   enable: true
 ```
-**注意**：
-第一次请务必初始化
+**注意**
+
+- 第一次请务必初始化
 ```bash
 hexo poi
 ```
-执行 `hexo clean` 命令并不会重建 id ，若改变了 uuid 则会创建一个新的    
-若要重置全部 id, 请参考前一条
+- 执行 `hexo clean` 命令并不会重建 id ，但若改变了 uuid 则会创建一个新的 id
+
+- 重置全部 id, 请参考前一条
 
 ### DEMO
 [VCGPGSZO](http://hluglk.top)
