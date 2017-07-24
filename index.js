@@ -1,7 +1,6 @@
 'use strict';
 
 let utils = require('./lib/util.js');
-var fs = require('hexo-fs');
 var hexo = hexo || {};
 var config = hexo.config;
 
