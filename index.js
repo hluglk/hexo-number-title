@@ -1,6 +1,6 @@
 'use strict';
 
-let utils = require('./lib/util.js');
+var utils = require('./lib/util.js');
 var hexo = hexo || {};
 var config = hexo.config;
 
