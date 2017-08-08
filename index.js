@@ -5,23 +5,18 @@ var hexo = hexo || {};
 var config = hexo.config;
 
 hexo.extend.filter.register('before_post_render', data => {
-  if (!config.number_title.enable || data.layout !== 'post') {
-    return data;
-  }
-  model.flush(data);
-})
-
-hexo.extend.console.register('poi', 'poi ?', function(args){
-  if (config.number_title.enable){}
-    model.poi(config.number_title);
+  if (data.layout !== 'post') return data;
+  if (config.number_title.enable) model.flush(data);
 });
 
-hexo.on('new',function(post){
-  if (config.number_title.enable)
-    model.new(post);
+hexo.extend.console.register('poi', 'poi ?', args => {
+  if (config.number_title.enable) model.poi(config.number_title);
 });
 
-hexo.on('exit',function(){
-  if (config.number_title.enable)
-    model.save(config.number_title);
+hexo.on('new', post => {
+  if (config.number_title.enable) model.new(post);
+});
+
+hexo.on('exit', () => {
+  if (config.number_title.enable) model.save(config.number_title);
 });
