@@ -33,9 +33,10 @@ number_title:
 
 ### 使用
 ```bash
-hexo poi # 初始化 只需执行一次
-hexo g # 初始化后执行此命令将使所有文章生效
-hexo n "test title" # 只对当前新生成文章生效
+# hexo poi # 初始化 并不会对所有文章生成
+hexo poi -f # 初始化 但此命令会对所有文章进行重新生成
+hexo g
+hexo n 'test' # 只对新生成的 test 文章生效
 ```
 
 ### 注意
