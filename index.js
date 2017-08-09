@@ -10,6 +10,7 @@ hexo.extend.filter.register('before_post_render', data => {
 });
 
 hexo.extend.console.register('poi', 'poi ?', args => {
+  config.number_title.isPoi = (args.f || args.flush) ? true:false;
   if (config.number_title.enable) model.poi(config.number_title);
 });
 
