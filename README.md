@@ -7,7 +7,7 @@ use timestamp generated value for the permalink `http://hluglk.top/archives/1500
 ```bash
 npm install hexo-number-title --save
 ```
-### editConfig
+### add in `_config.yml`
 ``` yml
 number_title:
   enable: true
