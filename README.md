@@ -1,57 +1,22 @@
 ## hexo-number-title
-为每篇文章生成不重复的 id 类型固定链接 如 `http://hluglk.top/archives/170434/`
+use timestamp generated value for the permalink `http://hluglk.top/archives/1500846116/`
 
-## 更新说明
-### 1.2.2
-poi指令添加了 `-f`、`--flush` 参数，用于判断是否刷新所有文章固定链接
+## usage
 
-### 1.2.1
-修复了一个导致开关失效的 bug，以及重构了部分代码。
-
-### 1.2.0
-目前较完美的版本  
-没有了之前的数据冗余问题，现在只要新增文章就会生成  
-~~**唯一的问题大概就是不兼容之前的版本了吧**~~
-~~> 想保留数据升级请查看注意事项~~
-
-### 1.x.x
-之前实现方式太麻烦了，还会导致数据冗余
-
-## 安装与使用
-
-### 安装
+### install
 ```bash
 npm install hexo-number-title --save
 ```
-
-### 配置 _config.yml
+### editConfig
 ``` yml
 number_title:
   enable: true
-  index: 170435 # 初始值
 ```
-
-### 使用
+### command
 ```bash
-# hexo poi # 初始化 并不会对所有文章生成
-hexo poi -f # 初始化 但此命令会对所有文章进行重新生成
+hexo clean # first clear history
 hexo g
-hexo n 'test' # 只对新生成的 test 文章生效
+hexo n
 ```
-
-### 注意
-- **第一次请务必执行初始化操作 `hexo poi`**
-- 执行 `hexo clean` 命令并不会重建 id
-- ~~若要重置只需执行 `hexo poi` 再执行 `hexo g`~~  
-使用 `hexo poi -f` 或 `hexo poi --flush`
-- 数据存放于 trolls.json
-
-> ~~由于项目几乎重写了,所以导致不兼容 `1.2.0` 之前的版本。  
-所以更新后需要重新 `poi` 一次，然后修改 `trolls.json` 文件里的 `isPoi` 为 `false`~~  
-无需做任何修改,使用 `hexo poi` 即可
-```json
-{"isPoi":false,"index":170436} 
-```
-
 ### EXAMPLE
 [VCGPGSZO](http://hluglk.top)
