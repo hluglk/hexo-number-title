@@ -11,10 +11,11 @@ npm install hexo-number-title --save
 ``` yml
 number_title:
   enable: true
+  # before_post_render: true # if you want to generate all, value is set to true
 ```
 ### command
 ```bash
-hexo clean # first clear history
+hexo clean
 hexo g
 hexo n
 ```

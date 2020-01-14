@@ -1,6 +1,6 @@
 {
   "name": "hexo-number-title",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "format title in the hexo blog into type of number",
   "main": "index.js",
   "scripts": {
