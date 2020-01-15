@@ -5,19 +5,24 @@ use timestamp generated value for the permalink `http://hluglk.top/archives/1500
 
 ### install
 ```bash
+# npm
 npm install hexo-number-title --save
+# yarn 
+yarn add hexo-number-title
 ```
-### add in `_config.yml`
+### configuration
+`_config.yml`
 ``` yml
 number_title:
   enable: true
-  # before_post_render: true # if you want to generate all, value is set to true
+```
+`scaffolds/post.md`
+```
+date: {{ date }}
 ```
 ### command
 ```bash
-hexo clean
-hexo g
-hexo n
+hexo n 'test'
 ```
 ### EXAMPLE
 [VCGPGSZO](http://hluglk.top)
