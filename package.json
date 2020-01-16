@@ -1,11 +1,9 @@
 {
   "name": "hexo-number-title",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "format title in the hexo blog into type of number",
   "main": "index.js",
-  "scripts": {
-    
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hluglk/hexo-number-title.git"
