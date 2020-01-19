@@ -1,5 +1,5 @@
 # hexo-number-title
-use timestamp generated value for the permalink `http://hluglk.top/archives/1500846116/`
+use timestamp generated value for the permalink `http://hluglk.top/archives/1500846116013/`
 
 ### INSTALL
 ```bash
@@ -10,11 +10,11 @@ yarn add hexo-number-title
 ```
 
 ### COMMAND
-```base
-❯ hexo new  test    
+```
+$ hexo new test    
 INFO  Created: ~/newblog/source/_posts/test.md
 
-❯ hexo number-title -h
+$ hexo number-title -h
 Usage: hexo number-title 
 
 Description:
